@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteBg"
+    android:orientation="vertical"
+    tools:ignore="SpUsage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/fira_sans_medium"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/orders"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/white"
+            android:elevation="@dimen/_3sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPending"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/fira_sans_sem_bold"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/pending"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/bg_grey" />
+
+            <TextView
+                android:id="@+id/tvRequestOrder"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fira_sans_sem_bold"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/requestOrder"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/_12sdp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/bg_grey" />
+
+            <TextView
+                android:id="@+id/tvOnGoing"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fira_sans_sem_bold"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/ongoing"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/_12sdp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/bg_grey" />
+
+            <TextView
+                android:id="@+id/tvDelivered"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fira_sans_sem_bold"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/delivered"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never" />
+
+
+</LinearLayout>

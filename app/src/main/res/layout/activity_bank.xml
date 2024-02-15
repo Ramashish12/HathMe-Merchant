@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="code.activity.BankActivity"
+    tools:ignore="SpUsage">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/inflate_header2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="@font/fira_sans_regular"
+                android:text="@string/accountHolderName"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/_11sdp" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/et_rectangular_border"
+                android:digits="@string/digit_alphabet"
+                android:fontFamily="@font/fira_sans_regular"
+                android:hint="@string/accountHolderName"
+                android:inputType="text"
+                android:maxLength="75"
+                android:maxLines="1"
+                android:padding="@dimen/_8sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="@font/fira_sans_regular"
+                android:text="@string/bankName"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/_11sdp" />
+
+            <EditText
+                android:id="@+id/etBankName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/et_rectangular_border"
+                android:digits="@string/digit_alphabet"
+                android:fontFamily="@font/fira_sans_regular"
+                android:hint="@string/bankName"
+                android:inputType="textCapSentences"
+                android:maxLength="75"
+                android:maxLines="1"
+                android:padding="@dimen/_8sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="@font/fira_sans_regular"
+                android:text="@string/accountNumber"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/_11sdp" />
+
+            <EditText
+                android:id="@+id/etAccountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/et_rectangular_border"
+                android:fontFamily="@font/fira_sans_regular"
+                android:hint="@string/accountNumber"
+                android:inputType="number"
+                android:maxLength="17"
+                android:maxLines="1"
+                android:padding="@dimen/_8sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="@font/fira_sans_regular"
+                android:text="@string/ConfirmAccountNumber"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/_11sdp" />
+
+            <EditText
+                android:id="@+id/etConfirmAccountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/et_rectangular_border"
+                android:fontFamily="@font/fira_sans_regular"
+                android:hint="@string/ConfirmAccountNumber"
+                android:inputType="number"
+                android:maxLength="17"
+                android:maxLines="1"
+                android:padding="@dimen/_8sdp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="@font/fira_sans_regular"
+                android:text="@string/ifscCode"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/_11sdp" />
+
+            <EditText
+                android:id="@+id/etIfscCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/et_rectangular_border"
+                android:fontFamily="@font/fira_sans_regular"
+                android:hint="@string/ifscCode"
+                android:inputType="textCapCharacters"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:padding="@dimen/_8sdp"
+                android:textAllCaps="true" />
+
+            <!-- <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/branch"
+                 android:textSize="@dimen/_11sdp"
+                 android:textColor="@color/textBlack"
+                 android:layout_margin="@dimen/_10sdp"
+                 android:fontFamily="@font/fira_sans_regular"/>
+
+             <EditText
+                 android:id="@+id/etBranch"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/_10sdp"
+                 android:layout_marginEnd="@dimen/_10sdp"
+                 android:background="@drawable/et_rectangular_border"
+                 android:fontFamily="@font/fira_sans_regular"
+                 android:hint="@string/branch"
+                 android:inputType="text"
+                 android:digits="@string/digits_branch"
+                 android:maxLength="50"
+                 android:maxLines="1"
+                 android:padding="@dimen/_8sdp" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/fira_sans_regular"
+                android:text="@string/accountType"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/_11sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/et_rectangular_border_no_radius">
+
+
+                <Spinner
+                    android:id="@+id/spinnerAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/accountType"
+                    android:padding="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/btn_rectangular_less_radius"
+                android:fontFamily="@font/fira_sans_sem_bold"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/saveChanges"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

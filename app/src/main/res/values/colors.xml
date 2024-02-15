@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FCCE3F</color>
+    <color name="colorPrimary15">#26FCCE3F</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whiteTrans">#BFFFFFFF</color>
+    <color name="textBlack">#3C3B3B</color>
+    <color name="etBorder">#CC6D7D8B</color>
+    <color name="textGrey">#6D7D8B</color>
+    <color name="orange">#FF6B00</color>
+    <color name="bg_grey">#E5E5E5</color>
+    <color name="green">#038910</color>
+    <color name="red">#B20909</color>
+    <color name="golden">#F0AE11</color>
+    <color name="blue">#0590FA</color>
+    <color name="whiteBg">#F1F1F1</color>
+    <color name="primaryOp">#40FCCE3F</color>
+    <color name="orderDoneColor">#FCCE3F</color>
+    <color name="orderInProgressColor">#C6DCE4</color>
+    <color name="orderOnGoingColor">#D7D7D8</color>
+    <color name="orderWaitingForReviewColor">#F7BACC</color>
+</resources>

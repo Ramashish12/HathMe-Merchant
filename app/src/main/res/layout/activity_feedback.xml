@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="SpUsage"
+    tools:context="code.activity.FeedbackActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/ivBack"
+            android:fontFamily="@font/fira_sans_medium"
+            android:text="@string/feedback"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvOrderNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order #20220110******08"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@color/textBlack"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:fontFamily="@font/fira_sans_medium"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDeliveredOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivered on Jan 15, 2022 | 2 items"
+            android:textSize="@dimen/_9sdp"
+            android:textColor="@color/textBlack"
+            android:fontFamily="@font/fira_sans_regular"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_rectangular_green"
+            android:paddingStart="@dimen/_5sdp"
+            android:visibility="gone"
+            android:paddingBottom="@dimen/_2sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:textSize="@dimen/_8sdp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/fira_sans_regular"/>
+
+            <ImageView
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:src="@drawable/ic_star_golden"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/totalBillC"
+            android:textSize="@dimen/_11sdp"
+            android:fontFamily="@font/fira_sans_regular"
+            android:textColor="@color/textGrey"/>
+
+        <TextView
+            android:id="@+id/tvTotalBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textSize="@dimen/_11sdp"
+            android:fontFamily="@font/fira_sans_medium"
+            android:textColor="@color/textBlack"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/viewRating"
+        android:textSize="@dimen/_10sdp"
+        android:visibility="gone"
+        android:textColor="@color/red"
+        android:fontFamily="@font/fira_sans_regular"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/giveRatingCustomer"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/textBlack"
+        android:layout_gravity="center"
+        android:fontFamily="@font/fira_sans_medium"
+        android:layout_marginTop="@dimen/_15sdp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:progressTint="@color/golden"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/writeComment"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/textBlack"
+        android:fontFamily="@font/fira_sans_regular"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivUserProfile"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@mipmap/dummy_image"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/etReply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/reply"
+            android:maxLines="4"
+            android:maxLength="250"
+            android:fontFamily="@font/fira_sans_regular"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:background="@drawable/et_rectangular_border_no_radius"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textSize="@dimen/_12sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_55sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/btn_rectangular_less_radius"
+        android:fontFamily="@font/fira_sans_regular"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

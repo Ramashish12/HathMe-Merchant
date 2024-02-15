@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    tools:ignore="SpUsage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/rlBottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvOrderNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fira_sans_medium"
+            android:text="# 788757578578"
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/tvItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fira_sans_regular"
+            android:text="John Ordered Pizza with Coke"
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/_10sdp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlBottom"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true">
+        <TextView
+            android:id="@+id/tvAccept"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/btn_rectangular_green"
+            android:fontFamily="@font/fira_sans_regular"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/accept"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+        <TextView
+            android:id="@+id/tvReject"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rectangular_green"
+            android:backgroundTint="@color/red"
+            android:fontFamily="@font/fira_sans_regular"
+            android:gravity="center"
+            android:visibility="visible"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/reject"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</RelativeLayout>
